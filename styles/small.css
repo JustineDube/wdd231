@@ -1,103 +1,123 @@
-/* small.css - Mobile first */
 :root {
-  --accent: #0b6cf6;
-  --bg: #f8fafc;
-  --text: #111827;
-  --muted: #6b7280;
-  font-family: "Inter", sans-serif;
+    --primary-color: #005f73;
+    --accent-color: #0a9396;
+    --background-color: #f0fdfa;
+    --text-color: #001219;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  padding: 1rem;
-  line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 1rem;
 }
 
-header, footer, main {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: inherit;
+    height: 40px;
 }
 
-.hamburger, .hamburger::before, .hamburger::after {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--text);
-  content: "";
-  position: relative;
-}
-.hamburger::before { position: absolute; top: -7px; }
-.hamburger::after { position: absolute; top: 7px; }
-
-.nav { display: none; }
-.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.nav a {
-  text-decoration: none;
-  color: var(--text);
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-.nav a:hover {
-  background: var(--accent);
-  color: #fff;
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
 }
 
-.hero h1 { margin: 0.5rem 0; }
-.controls { margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.controls button {
-  padding: 0.4rem 0.8rem;
-  border: 1px solid var(--accent);
-  border-radius: 5px;
-  background: #fff;
-  cursor: pointer;
-}
-.controls button[aria-pressed="true"] {
-  background: var(--accent);
-  color: #fff;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.courses-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+nav ul.hidden {
+    display: none;
 }
 
-.course-card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
-.course-card.completed {
-  border-left: 4px solid var(--accent);
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+.course-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer .socials a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.course-card {
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.course-card.completed {
+    background-color: #d8f3dc;
+    border-color: green;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-text,
+.about-photo {
+    width: 100%;
+}
+
+.about-photo img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
 }

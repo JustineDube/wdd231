@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menuToggle");
-  const nav = document.getElementById("primaryNav");
+    const menuButton = document.getElementById("menu");
+    const navLinks = document.getElementById("nav-links");
 
-  toggle.addEventListener("click", () => {
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", !expanded);
-    nav.style.display = expanded ? "none" : "block";
-  });
+    menuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+    });
 });

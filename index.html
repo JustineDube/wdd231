@@ -1,76 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Justine Dube - WDD231 Home</title>
-  <meta name="description" content="Course home page for WDD231 demonstrating responsive design, accessibility, and dynamic JavaScript.">
-  <meta name="author" content="Justine Dube">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course homepage for WDD231 by Lebohang Sebata">
+    <meta name="author" content="Lebohang Sebata">
+    <title>Justine Dube - WDD231</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/large.css">
-
-  <!-- Scripts -->
-  <script defer src="scripts/navigation.js"></script>
-  <script defer src="scripts/date.js"></script>
-  <script defer src="scripts/courses.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <div class="header-inner">
-      <a class="logo" href="index.html">
-        <img src="images/logo.webp" alt="Site Logo" width="48" height="48">
-        <span class="author">Justine Dube</span>
-      </a>
-      <button id="menuToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Menu">
-        <span class="hamburger"></span>
-      </button>
-      <nav id="primaryNav" class="nav">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="chamber/index.html">Chamber</a></li>
-          <li><a href="final/index.html">Final</a></li>
-          <li><a href="https://github.com/yourgithubusername" target="_blank" rel="noopener">GitHub</a></li>
+    <header>
+        <img src="images/logo.webp" alt="Site Logo" class="logo">
+        <span class="site-name">Justine Dube</span>
+        <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/directory.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <main>
-    <section class="hero">
-      <h1>Home</h1>
-      <p>Welcome to my WDD231 course homepage. This site demonstrates responsive layouts, semantic HTML, and dynamic JavaScript features.</p>
-    </section>
+    <main>
+        <h1>Home</h1>
 
-    <section class="certificate">
-      <h2>Web and Computer Programming Certificate</h2>
-      <div class="controls">
-        <button data-filter="all" aria-pressed="true">All Courses</button>
-        <button data-filter="WDD" aria-pressed="false">WDD Courses</button>
-        <button data-filter="CSE" aria-pressed="false">CSE Courses</button>
-      </div>
-      <div id="coursesContainer" class="courses-grid" aria-live="polite"></div>
-      <p>Total Credits: <span id="creditsTotal">0</span></p>
-    </section>
+        <section>
+            <h2>Welcome</h2>
+            <p>This is the course homepage for WDD231.</p>
+        </section>
 
-    <section class="about">
-      <h2>About This Project</h2>
-      <p>This project applies core design principles: proximity, alignment, repetition, and contrast. It is mobile-first, responsive, and passes accessibility and SEO audits.</p>
-    </section>
-  </main>
+        <section class="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hi, I'm Justine Dube. I'm currently studying web design and development. I enjoy building
+                        responsive
+                        and interactive websites, and I'm passionate about using technology to solve everyday problems.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
 
-  <footer>
-    <p>
-      <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-    </p>
-    <p>&copy; <span id="year"></span> Justine Dube, Zimbabwe</p>
-    <p id="lastModified"></p>
-  </footer>
+        <section>
+            <h2>Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+            <div id="courseCards"></div>
+            <p>Total Credits: <span id="totalCredits">0</span></p>
+        </section>
+
+        <section>
+            <h2>About This Site</h2>
+            <p>Built using HTML, CSS, and JavaScript. Fully responsive and accessible.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/justinedube" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/justinedube/" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Justine Dube | Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
