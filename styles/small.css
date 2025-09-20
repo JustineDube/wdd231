@@ -1,0 +1,103 @@
+/* small.css - Mobile first */
+:root {
+  --accent: #0b6cf6;
+  --bg: #f8fafc;
+  --text: #111827;
+  --muted: #6b7280;
+  font-family: "Inter", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+header, footer, main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  content: "";
+  position: relative;
+}
+.hamburger::before { position: absolute; top: -7px; }
+.hamburger::after { position: absolute; top: 7px; }
+
+.nav { display: none; }
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.nav a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero h1 { margin: 0.5rem 0; }
+.controls { margin: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.controls button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+.controls button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.course-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.course-card.completed {
+  border-left: 4px solid var(--accent);
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

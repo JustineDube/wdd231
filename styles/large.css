@@ -1,0 +1,17 @@
+/* large.css - larger viewports */
+@media (min-width: 48rem) {
+  .nav { display: block; }
+  .nav ul { flex-direction: row; gap: 1rem; }
+  #menuToggle { display: none; }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .courses-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 80rem) {
+  .courses-grid { grid-template-columns: repeat(3, 1fr); }
+}
