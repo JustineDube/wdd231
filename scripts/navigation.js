@@ -1,6 +1,8 @@
-const menubutton = document.querySelector('.hamburger');
-const menuitems = document.querySelector('nav ul');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menu");
+    const navLinks = document.getElementById("nav-links");
 
-menubutton.addEventListener('click', () => {
-  menuitems.classList.toggle('open');
+    menuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+    });
 });
