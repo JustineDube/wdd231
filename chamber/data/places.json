@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Bulawayo Art Gallery",
+        "address": "Leopold Takawira Ave, Bulawayo",
+        "description": "A historical center showcasing Zimbabwean fine arts.",
+        "image": "gallery.jpg"
+    },
+    {
+        "name": "Centenary Park",
+        "address": "JMN Nkomo St, Bulawayo",
+        "description": "A relaxing green space with sculptures and gardens.",
+        "image": "park.jpg"
+    },
+    {
+        "name": "Natural History Museum",
+        "address": "Park Rd, Bulawayo",
+        "description": "Zimbabwe’s largest natural history museum.",
+        "image": "museum.jpg"
+    },
+    {
+        "name": "Bulawayo Railway Museum",
+        "address": "Centenary Park, Bulawayo",
+        "description": "Features old trains and railway heritage.",
+        "image": "railway.jpg"
+    },
+    {
+        "name": "Khami Ruins",
+        "address": "22 km west of Bulawayo",
+        "description": "UNESCO World Heritage archaeological site.",
+        "image": "khami.jpg"
+    },
+    {
+        "name": "Matobo Hills",
+        "address": "35 km south of Bulawayo",
+        "description": "Granite formations, cave art, and Cecil Rhodes’ grave.",
+        "image": "matobo.jpg"
+    },
+    {
+        "name": "Mzilikazi Art & Craft Centre",
+        "address": "Mzilikazi Township, Bulawayo",
+        "description": "Craft workshops and African artisan items.",
+        "image": "craft.jpg"
+    },
+    {
+        "name": "Bulawayo Amphitheatre",
+        "address": "Centenary Park, Bulawayo",
+        "description": "Venue for live events and public shows.",
+        "image": "amphi.jpg"
+    }
+]

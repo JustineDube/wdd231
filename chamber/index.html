@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bulawayo Chamber of Commerce Home Page" />
+    <meta name="author" content="Justine Dube" />
+    <title>Bulawayo Chamber of Commerce</title>
+
+    <link rel="icon" href="../images/logo.webp" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.webp" alt="Chamber Logo" class="logo" />
+        <span class="site-name">Bulawayo Chamber of Commerce</span>
+        <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="Bulawayo City View" class="hero-img" />
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>📅 Business Networking Breakfast – 30 July</li>
+                <li>📅 Women in Tech Forum – 5 August</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p id="current-temp"></p>
+            <p id="weather-desc"></p>
+            <div id="forecast"></div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: info@bulawayochamber.org | +263 29 1234567</p>
+        <p>&copy; <span id="currentyear"></span> Justine Dube | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

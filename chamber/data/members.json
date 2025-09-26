@@ -1,0 +1,82 @@
+[
+    {
+        "name": "So Sweet Bakery",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+292 46 17 89",
+        "website": "https://sosweet.com",
+        "image": "so-sweet.jpg",
+        "membership": 53
+    },
+    {
+        "name": "Bakers Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://bakers-inn.com",
+        "image": "bakers-inn.jpg",
+        "membership": 7
+    },
+    {
+        "name": "Cream Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://cream-inn.com",
+        "image": "cream-inn.jpg",
+        "membership": 27
+    },
+    {
+        "name": "Chicken Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://chicken-inn.com",
+        "image": "chicken-inn.png",
+        "membership": 79
+    },
+    {
+        "name": "Pizza Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://pizza-inn.com",
+        "image": "pizza-inn.png",
+        "membership": 86
+    },
+    {
+        "name": "Fish Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://fish-inn.com",
+        "image": "fish-inn.jpg",
+        "membership": 12
+    },
+    {
+        "name": "Nandos",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://nandos.com",
+        "image": "nandos.png",
+        "membership": 45
+    },
+    {
+        "name": "Tech Solutions",
+        "image": "techsolutions.png",
+        "phone": "+263 777 111 222",
+        "address": "123 Main Street, Bulawayo",
+        "website": "https://techsolutions.co.zw",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Green Energy Africa",
+        "image": "greenenergy.png",
+        "phone": "+263 774 333 444",
+        "address": "45 Eco Road, Bulawayo",
+        "website": "https://greenafrica.org",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Farm Supplies Co.",
+        "image": "farmsupplies.jpg",
+        "phone": "+263 712 555 666",
+        "address": "89 Harvest Lane, Bulawayo",
+        "website": "https://farmsupplies.com",
+        "membershipLevel": "Bronze"
+    }
+]
