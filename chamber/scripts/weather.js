@@ -1,6 +1,7 @@
-const apiKey = '15ac4d499a11f1eda8e14004ea7457c8'; // Replace with your OpenWeatherMap API key
+const apiKey = '15ac4d499a11f1eda8e14004ea7457c8'; 
 const city = 'Bulawayo';
-const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?q=Bulawayo&units=metric&appid=15ac4d499a11f1eda8e14004ea7457c8
+`;
 
 const currentTemp = document.getElementById('current-temp');
 const weatherDesc = document.getElementById('weather-desc');
