@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieVerse - Your Movie Discovery Hub. Explore thousands of shows, view details, and save your favorites.">
+    <meta name="author" content="Justine Dube">
+    <meta property="og:title" content="MovieVerse - Your Movie Discovery Hub">
+    <meta property="og:description" content="Discover your next favorite show on MovieVerse. Explore, filter, and save shows to your favorites list.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yoursite.com">
+    <title>Justine-Theater - Home | The Movie Hub</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Justine Theater</h1>
+                <p class="tagline">The Movie Hub</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to MovieVerse</h2>
+                <p>Discover, explore, and save your favorite shows all in one place.</p>
+                <a href="shows.html" class="cta-button">Explore Shows</a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Show of the Day</h2>
+            <div id="featuredShow" class="featured-show-container">
+                <div class="loading">Loading show of the day...</div>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>🔍 Discover</h3>
+                <p>Browse thousands of TV shows from around the world.</p>
+            </div>
+            <div class="info-card">
+                <h3>❤️ Save Favorites</h3>
+                <p>Keep track of shows you love with your personal favorites list.</p>
+            </div>
+            <div class="info-card">
+                <h3>📊 Get Details</h3>
+                <p>View ratings, genres, premiere dates, and summaries.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025  Justine-Theater |Justine Dube| . All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#video-link" id="videoLink">View Demo Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

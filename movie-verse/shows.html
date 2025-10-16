@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse and discover TV shows on Justine-Theater. Filter by genre, sort by rating, and save your favorites.">
+    <meta name="author" content="Justine Dube">
+    <meta property="og:title" content="Justine-Theater - Shows">
+    <meta property="og:description" content="Explore our collection of TV shows with filters and sorting options.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <title>Shows | MovieVerse</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Justine Theater</h1>
+                <p class="tagline">The Movie Hub</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shows.html" class="active">Shows</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shows-header">
+            <h1>Browse Shows</h1>
+            <p>Explore our collection of TV shows from around the world</p>
+        </section>
+
+        <section class="controls">
+            <div class="filter-sort">
+                <div class="filter-group">
+                    <label for="genreFilter">Filter by Genre:</label>
+                    <select id="genreFilter" aria-label="Filter shows by genre">
+                        <option value="">All Genres</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Action">Action</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Documentary">Documentary</option>
+                    </select>
+                </div>
+
+                <div class="sort-group">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" aria-label="Sort shows">
+                        <option value="name">Name (A-Z)</option>
+                        <option value="rating">Rating (Highest)</option>
+                        <option value="premiered">Newest First</option>
+                    </select>
+                </div>
+
+                <button id="resetFilters" class="reset-btn">Reset Filters</button>
+            </div>
+        </section>
+
+        <section class="shows-container" id="showsGrid">
+            <div class="loading">Loading shows...</div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="showModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <div id="modalBody"></div>
+            <button id="addToFavoritesBtn" class="modal-button">Add to Favorites</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Justine-Theater |Justine Dube|. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#video-link" id="videoLink">View Demo Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

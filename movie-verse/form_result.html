@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for contacting MovieVerse. Your message has been received.">
+    <meta name="author" content="Justine Dube">
+    <title>Form Submission | MovieVerse</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Justine Theater</h1>
+                <p class="tagline">The Movie Hub</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-result-section">
+            <div class="form-result-container">
+                <h1>Thank You!</h1>
+                <p class="success-message">Your message has been received successfully.</p>
+
+                <div class="result-data">
+                    <h2>Here's what we received:</h2>
+                    <div id="resultContent" class="result-content">
+                        <p>Loading your submission details...</p>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <a href="index.html" class="back-link">Back to Home</a>
+                    <a href="shows.html" class="back-link">Browse Shows</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Justine-Theater. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#video-link" id="videoLink">View Demo Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/form-result.js"></script>
+</body>
+</html>

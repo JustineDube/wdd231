@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your favorite shows saved on MovieVerse. Manage and explore your personalized list.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="MovieVerse - My Favorites">
+    <meta property="og:description" content="View and manage your saved favorite shows on MovieVerse.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <title>Favorites | MovieVerse</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Justine Theater</h1>
+                <p class="tagline">The Movie Hub</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="favorites.html" class="active">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favorites-header">
+            <h1>My Favorite Shows</h1>
+            <p>Your personalized collection of shows you love</p>
+        </section>
+
+        <section class="favorites-container" id="favoritesGrid">
+            <div class="empty-state">
+                <p>No favorites yet! <a href="shows.html">Browse shows</a> and add your favorites.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="showModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+            <div id="modalBody"></div>
+            <button id="removeFavoritesBtn" class="modal-button remove">Remove from Favorites</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Justine-Theater |Justine Dube|. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#video-link" id="videoLink">View Demo Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

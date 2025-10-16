@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MovieVerse - Send us feedback or suggest a show for our collection.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="MovieVerse - Contact Us">
+    <meta property="og:description" content="Get in touch with MovieVerse. We'd love to hear your feedback and suggestions.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <title>Contact | MovieVerse</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Justine Theater</h1>
+                <p class="tagline">The Movie Hub</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p class="intro-text">Have feedback or want to suggest a show? We'd love to hear from you!</p>
+
+                <form id="contactForm" class="contact-form" action="form-result.html" method="GET">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required aria-required="true">
+                            <option value="">-- Select a subject --</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="suggestion">Show Suggestion</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="showSuggestion">Show Suggestion (if applicable)</label>
+                        <input type="text" id="showSuggestion" name="showSuggestion" placeholder="Name of the show you'd like us to add">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required aria-required="true" rows="6" placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Subscribe to our newsletter for updates</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Justine-Theater |Justine Dube|. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#video-link" id="videoLink">View Demo Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
