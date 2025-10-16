@@ -1,0 +1,40 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #E50914;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #0B1320;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.color-box {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+img {
+  border: 2px solid #E50914;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
